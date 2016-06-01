@@ -102,10 +102,10 @@ test('<StylinButton />', t => {
   const wrapper = render(React.createElement(StylinButton, props))
 
   // assert
-  t.ok(wrapper.html().indexOf('button') > 1)
-  t.ok(wrapper.html().indexOf('background-color') > 1)
-  t.ok(wrapper.html().indexOf('red') > 1)
-  t.ok(wrapper.html().indexOf('border-radius') > 1)
+  t.ok(wrapper.html().indexOf('button') > -1)
+  t.ok(wrapper.html().indexOf('background-color') > -1)
+  t.ok(wrapper.html().indexOf('red') > -1)
+  t.ok(wrapper.html().indexOf('border-radius') > -1)
        
 })
 
