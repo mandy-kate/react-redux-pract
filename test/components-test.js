@@ -195,10 +195,6 @@ test('<SpecialFilter />', t => {
   t.ok(wrapper.contains(React.createElement(BestList)))
 
   t.same(listItems.length, 3)
-  listItems.forEach((li, i) => {
-    t.same(li.text(), cats[i].name)
-  })
-  
   t.same(dogWrapper.find('li').length, 2)
 })
 
