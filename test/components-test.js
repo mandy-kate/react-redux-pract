@@ -192,7 +192,9 @@ test('<SpecialFilter />', t => {
   const listItems = wrapper.find('li')
 
   // assert
-  t.ok(wrapper.contains(React.createElement(BestList)))
+  listItems.forEach((li, i) => {
+    t.same(li.text(), cats[i].name)
+  })
 
   t.same(listItems.length, 3)
   t.same(dogWrapper.find('li').length, 2)
