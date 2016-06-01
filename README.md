@@ -34,7 +34,8 @@ Your job is to pass the tests we have provided. As you make the tests pass the k
 
 Try to understand how the `state` in `src/components/app.js` is passed down as `props` to its child components.  
 
-To run the tests `npm run test` to run the component tests.
+Run `npm run test` for the tests and in a separate terminal run `npm run dev` to start the app.
+
 
 The tests use a react testing library [enzyme](http://airbnb.io/enzyme/) and [ava](https://www.npmjs.com/package/ava).  To get a good grasp on how the tests work you will need to refer the enzyme and ava docs. At this stage, just get used to reading enzyme tests, not reproducing them. 
 The tests should be attempted in the following order. 

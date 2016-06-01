@@ -11,7 +11,7 @@ var Table = React.createClass({
           <tr>
             <th>Name</th>
             <th>Age</th>
-          <tr>
+          </tr>
         </thead>
         <tbody>
         {
@@ -24,7 +24,7 @@ var Table = React.createClass({
             )
           })
         }
-        <tbody>
+        </tbody>
       </table>
     )
   }
@@ -61,7 +61,7 @@ const TableAsFun = ({items}) => {
         <tr>
           <th>Name</th>
           <th>Age</th>
-        <tr>
+        </tr>
       </thead>
       <tbody>
       {
@@ -74,7 +74,7 @@ const TableAsFun = ({items}) => {
           )
         })
       }
-      <tbody>
+      </tbody>
     </table>
   )
 }
@@ -88,7 +88,7 @@ const TableAsClass = class extend React.Component {
         <tr>
           <th>Name</th>
           <th>Age</th>
-        <tr>
+        </tr>
       </thead>
       <tbody>
       {
@@ -101,7 +101,7 @@ const TableAsClass = class extend React.Component {
           )
         })
       }
-      <tbody>
+      </tbody>
     </table>
   )
  }
