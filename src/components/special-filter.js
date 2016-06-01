@@ -7,7 +7,7 @@ module.exports = React.createClass({
   render: function () {
     return (
 			<div>
-         <BestList />
+         <BestList items={[]} />
 			</div>
     )
   }
