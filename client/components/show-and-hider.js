@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 class ShowAndHider extends React.Component {
  
   render() {

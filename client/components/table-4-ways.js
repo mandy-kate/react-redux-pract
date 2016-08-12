@@ -42,7 +42,7 @@ const TableAsFun = ({items}) => (
     </thead>
     <tbody>
       {
-        map(items, (item) => (
+        items.map( item => (
           <tr>  
             <td>{item.name}</td>
             <td>{item.age}>/td>

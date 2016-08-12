@@ -10,7 +10,9 @@ import SpecialFilter from './special-filter'
 
 class App extends React.Component {
 
-  constructor() {
+  constructor(props) {
+    super(props)
+
     this.state = {
       title:  'My Better App',
       formClasses: [ 'textarea-form', 'form' ], 
