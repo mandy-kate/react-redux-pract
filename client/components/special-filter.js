@@ -5,9 +5,9 @@ import BestList from './best-list' // <- a clue!!
 class SpecialFilter extends React.Component {
   render() {
     return (
-			<div>
-         <BestList items={[]} />
-			</div>
+      <div>
+        <BestList items={[]} />
+      </div>
     )
   }
 
