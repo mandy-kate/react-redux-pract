@@ -1,4 +1,3 @@
-'use strict'
 import React from 'react'
 import Header from './header'
 import BetterHeader from './better-header'
@@ -9,10 +8,10 @@ import BestList from './best-list'
 import SpecialFilter from './special-filter'
 
 
-module.exports = React.createClass({
+class App extends React.Component {
 
-  getInitialState: function () {
-    return {
+  constructor() {
+    this.state = {
       title:  'My Better App',
       formClasses: [ 'textarea-form', 'form' ], 
       buttonClasses: [ 'big', 'button' ],
@@ -31,9 +30,9 @@ module.exports = React.createClass({
         { type: 'cat', name: 'grumpy cat' }
       ]
     }
-  },
+  }
 
-  render: function () {
+  render() {
     return (
       <div>
         <Header />
@@ -46,6 +45,6 @@ module.exports = React.createClass({
       </div>
     )
   }
-})
+}
 
-
+module.exports = App

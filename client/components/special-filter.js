@@ -1,10 +1,9 @@
 
-'use strict'
 import React from 'react'
 import BestList from './best-list' // <- a clue!!
 
-module.exports = React.createClass({
-  render: function () {
+class SpecialFilter extends React.Component {
+  render() {
     return (
 			<div>
          <BestList items={[]} />
@@ -12,4 +11,6 @@ module.exports = React.createClass({
     )
   }
 
-})
+}
+
+module.exports = SpecialFilter

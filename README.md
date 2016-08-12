@@ -32,7 +32,7 @@ See if you can understand what html should be generated.
 
 Your job is to pass the tests we have provided. As you make the tests pass the kata-app will update and you will be able to see your components update on localhost:8080. 
 
-Try to understand how the `state` in `src/components/app.js` is passed down as `props` to its child components.  
+Try to understand how the `state` in `client/components/app.js` is passed down as `props` to its child components.  
 
 Run `npm run test` for the tests and in a separate terminal run `npm run dev` to start the app.
 
@@ -51,5 +51,5 @@ The tests should be attempted in the following order.
 
 ## Addendum: Different styles of React
 
-You will encounter react code written in a number of different ways. Take a look at `src/components/table-4-ways.js` to see the same component written in 4 different styles. Try importing the component into app.js and passing props into it.  
+You will encounter react code written in a number of different ways. Take a look at `client/components/table-4-ways.js` to see the same component written in 4 different styles. Try importing the component into app.js and passing props into it.  
 
