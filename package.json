@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:watch": "watchify src/client.js -o public/bundle.js -dv -t babelify",
+    "dev:watch": "watchify client/index.js -o public/bundle.js -dv -t babelify",
     "dev:livereload": "wtch -d public | garnish --level debug",
     "dev:serve": "node-dev server.js",
     "dev": "NODE_ENV=development npm-run-all -p dev:*",

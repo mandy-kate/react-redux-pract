@@ -4,13 +4,13 @@ import { spy } from 'sinon'
 import { shallow, render, mount } from 'enzyme'
 
 // components
-import Header from '../src/components/header'
-import BetterHeader from '../src/components/better-header'
-import FormTextArea from '../src/components/form-text-area'
-import StylinButton from '../src/components/stylin-button'
-import ShowAndHider from '../src/components/show-and-hider'
-import BestList from '../src/components/best-list'
-import SpecialFilter from '../src/components/special-filter'
+import Header from '../client/components/header'
+import BetterHeader from '../client/components/better-header'
+import FormTextArea from '../client/components/form-text-area'
+import StylinButton from '../client/components/stylin-button'
+import ShowAndHider from '../client/components/show-and-hider'
+import BestList from '../client/components/best-list'
+import SpecialFilter from '../client/components/special-filter'
 
 // static content
 test('<Header />', t => {
