@@ -14,34 +14,20 @@ class App extends React.Component {
     super(props)
 
     this.state = {
-      title:  'My Better App',
-      formClasses: [ 'textarea-form', 'form' ], 
-      buttonClasses: [ 'big', 'button' ],
-      buttonStyle:  { backgroundColor: 'red', borderRadius: '5px' },
-      options: [ 'yes', 'no', 'maybe' ],
-      musketeers: [
-        { text: 'Athos' },
-        { text: 'Portos' },
-        { text: 'Aramis' }
-      ],
-      animals: [
-        { type: 'cat', name: 'tiger' },
-        { type: 'dog', name: 'daschund' },
-        { type: 'cat', name: 'panther' },
-        { type: 'dog', name: 'labrador' },
-        { type: 'cat', name: 'grumpy cat' }
-      ]
+      musketeers: this.props.musketeers,
+      animals:    this.props.animals
     }
+    // we put these in state, because we might want to add/ remove these from the state later
   }
 
   render() {
     return (
       <div>
         <Header />
-        <BetterHeader title={this.state.title} />
-        <FormTextArea formClasses={this.state.formClasses} buttonClasses={this.state.buttonClasses} />
-        <StylinButton style={this.state.buttonStyle} />
-        <ShowAndHider displayOptions={true} options={this.state.options} />
+        <BetterHeader title={this.props.title} />
+        <FormTextArea formClasses={this.props.formClasses} buttonClasses={this.props.buttonClasses} />
+        <StylinButton style={this.props.buttonStyle} />
+        <ShowAndHider displayOptions={true} options={this.props.options} />
         <BestList items={this.state.musketeers} />  
         <SpecialFilter filter="cat" items={this.state.animals} />
       </div>
