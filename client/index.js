@@ -25,7 +25,7 @@ const INITIAL_DATA = {
 
 domready(() => {
   ReactDOM.render(
-    <App data={INITIAL_DATA} />,
+    <App {...INITIAL_DATA} />, // see https://babeljs.io/docs/plugins/transform-object-rest-spread/ for the "..." feature of ES7
     document.querySelector('#app')
   )
 })

@@ -32,7 +32,7 @@ See if you can understand what html should be generated.
 
 Your job is to pass the tests we have provided. As you make the tests pass the kata-app will update and you will be able to see your components update on localhost:8080. 
 
-Try to understand how the `state` in `client/components/app.js` is passed down as `props` to its child components.  
+Try to understand how the `INITIAL_DATA` in `client/components/app.js` is passed down as `props` to its child components.  
 
 Run `npm run test` for the tests and in a separate terminal run `npm run dev` to start the app.
 

@@ -21,15 +21,19 @@ class App extends React.Component {
   }
 
   render() {
+    console.log('props in App: ', this.props)
+    const { title, formClasses, buttonClasses, buttonStyle, options } = this.props
+    const { musketeers, animals } = this.state 
+
     return (
       <div>
         <Header />
-        <BetterHeader title={this.props.title} />
-        <FormTextArea formClasses={this.props.formClasses} buttonClasses={this.props.buttonClasses} />
+        <BetterHeader title={title} />
+        <FormTextArea formClasses={formClasses} buttonClasses={buttonClasses} />
         <StylinButton style={this.props.buttonStyle} />
-        <ShowAndHider displayOptions={true} options={this.props.options} />
-        <BestList items={this.state.musketeers} />  
-        <SpecialFilter filter="cat" items={this.state.animals} />
+        <ShowAndHider displayOptions={true} options={options} />
+        <BestList items={musketeers} />  
+        <SpecialFilter filter="cat" items={animals} />
       </div>
     )
   }
