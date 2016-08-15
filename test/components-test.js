@@ -167,11 +167,11 @@ test('<SpecialFilter />', t => {
 
   // arrange
   const items = [
-    { type: 'cat', name: 'tiger' },
-    { type: 'dog', name: 'daschund' },
-    { type: 'cat', name: 'panther' },
-    { type: 'dog', name: 'labrador' },
-    { type: 'cat', name: 'grumpy cat' }
+    { type: 'cat', text: 'tiger' },
+    { type: 'dog', text: 'daschund' },
+    { type: 'cat', text: 'panther' },
+    { type: 'dog', text: 'labrador' },
+    { type: 'cat', text: 'grumpy cat' }
   ]
   const cats = items.filter(function(item) {
    return item.type === 'cat' 
@@ -193,7 +193,7 @@ test('<SpecialFilter />', t => {
 
   // assert
   listItems.forEach((li, i) => {
-    t.same(li.text(), cats[i].name)
+    t.same(li.text(), cats[i].text)
   })
 
   t.same(listItems.length, 3)

@@ -15,11 +15,11 @@ const INITIAL_DATA = {
     { text: 'Aramis' }
   ],
   animals: [
-    { type: 'cat', name: 'tiger' },
-    { type: 'dog', name: 'daschund' },
-    { type: 'cat', name: 'panther' },
-    { type: 'dog', name: 'labrador' },
-    { type: 'cat', name: 'grumpy cat' }
+    { type: 'cat', text: 'tiger' },
+    { type: 'dog', text: 'daschund' },
+    { type: 'cat', text: 'panther' },
+    { type: 'dog', text: 'labrador' },
+    { type: 'cat', text: 'grumpy cat' }
   ]
 }
 
