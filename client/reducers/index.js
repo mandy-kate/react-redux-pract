@@ -20,8 +20,6 @@ const productReducer = (state, action) => {
     default:
       return state
   }
-
-
 }
 
 
@@ -35,9 +33,6 @@ const cartReducer = (state, action) => {
     default:
       return state
   }
-
-
-
 }
 
 
@@ -52,9 +47,6 @@ const totalReducer = (state, action) => {
     default:
       return state
   }
-
-
-
 }
 
 
