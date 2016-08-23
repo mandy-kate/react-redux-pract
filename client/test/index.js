@@ -51,6 +51,28 @@ test('removeFromCart removes the product from the cart', t => {
 
 })
 
+//arrange
+var expectedState2 = {
+  product: {
+    tiger: { id: 'tiger', name: 'tiger', price: 3000, stock: 10 },
+    lion: { id: 'lion', name: 'lion', price: 4000, stock: 4 },
+    parrot: { id: 'parrot', name: 'parrot', price: 2500, stock: 6 },
+    monkey: { id: 'monkey', name: 'monkey', price: 2000, stock: 8 },
+  },
+  cart: ['lion'],
+  total: 4000
+}
+
+test('clickHandler adds product to cart', t => {
+  const actual = reducer(initialState, addToCart('lion', 4000))
+  console.log('actual state ', actual)
+  t.deepEqual(actual, expectedState2)
+
+  t.end()
+
+
+})
+
 
 
 

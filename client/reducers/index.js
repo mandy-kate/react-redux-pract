@@ -5,6 +5,7 @@ const productReducer = (state, action) => {
 
   switch (action.type) {
     case 'ADD_TO_CART':
+      console.log('this is the state', state)
       var product = state[action.payload.productId]
       var updatedProduct = Object.assign({}, product, { stock: product.stock -1 } )
       var update = {}
@@ -30,8 +31,7 @@ const cartReducer = (state, action) => {
     case 'ADD_TO_CART':
       return [...state, action.payload.productId]
     case 'REMOVE_FROM_CART' :
-      return [...state.slice(0, action.payload.productId.length),
-        ...state.slice(action.payload.productId.length +1)]
+      return [...state.slice(0, action.payload.productId.length)]
     default:
       return state
   }
@@ -61,7 +61,7 @@ const totalReducer = (state, action) => {
 
 module.exports = (state=initialState, action) => {
   return {
-    product: productReducer(state.products, action),
+    products: productReducer(state.products, action),
     cart: cartReducer(state.cart, action),
     total: totalReducer(state.total, action)
   }
