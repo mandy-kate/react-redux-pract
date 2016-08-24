@@ -41,9 +41,9 @@ const totalReducer = (state, action) => {
     case 'ADD_TO_CART':
       return state + action.payload.price
     case 'REMOVE_FROM_CART' :
-      if (state.total >= action.payload.price) {
+      // if (state.total >= action.payload.price) {
         return state - action.payload.price
-      }
+      // }
     default:
       return state
   }

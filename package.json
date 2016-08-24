@@ -8,7 +8,7 @@
     "dev:livereload": "wtch -d public | garnish --level debug",
     "dev:serve": "node-dev server.js",
     "dev": "NODE_ENV=development npm-run-all -p dev:*",
-    "test": "ava --watch | tap-spec"
+    "test": "tape client/test/index.js | tap-spec"
   },
   "ava": {
     "failFast": true,
